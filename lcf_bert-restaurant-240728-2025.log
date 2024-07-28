@@ -1,0 +1,54 @@
+> n_trainable_params: 113617923, n_nontrainable_params: 0
+> training arguments:
+>>> model_name: lcf_bert
+>>> dataset: restaurant
+>>> optimizer: <class 'transformers.optimization.AdamW'>
+>>> initializer: <function xavier_uniform_ at 0x7f4d8941e040>
+>>> lr: 3e-05
+>>> dropout: 0
+>>> l2reg: 0.01
+>>> num_epoch: 5
+>>> batch_size: 16
+>>> log_step: 10
+>>> embed_dim: 300
+>>> hidden_dim: 300
+>>> bert_dim: 768
+>>> pretrained_bert_name: bert-base-uncased
+>>> max_seq_len: 80
+>>> polarities_dim: 3
+>>> hops: 3
+>>> patience: 5
+>>> device: cpu
+>>> seed: 1234
+>>> valset_ratio: 0
+>>> local_context_focus: cdm
+>>> SRD: 5
+>>> model_class: <class 'models.lcf_bert.LCF_BERT'>
+>>> dataset_file: {'train': './datasets/semeval14/Restaurants_Train.xml.seg', 'test': './datasets/semeval14/Restaurants_Test_Gold.xml.seg'}
+>>> inputs_cols: ['concat_bert_indices', 'concat_segments_indices', 'text_bert_indices', 'aspect_bert_indices']
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+epoch: 0
+loss: 1.0547, acc: 0.5750
+loss: 1.0068, acc: 0.5875
+loss: 1.0042, acc: 0.5667
+loss: 0.9695, acc: 0.5859
+loss: 0.9284, acc: 0.6075
+loss: 0.8804, acc: 0.6302
+loss: 0.8635, acc: 0.6384
+loss: 0.8507, acc: 0.6453
+loss: 0.8348, acc: 0.6514
+loss: 0.8129, acc: 0.6600
+loss: 0.7935, acc: 0.6670
+loss: 0.7896, acc: 0.6703
+loss: 0.7668, acc: 0.6803
+loss: 0.7543, acc: 0.6888
+loss: 0.7392, acc: 0.6963
+loss: 0.7309, acc: 0.7000
+loss: 0.7167, acc: 0.7055
+loss: 0.7101, acc: 0.7066
+loss: 0.6988, acc: 0.7099
+loss: 0.6907, acc: 0.7122
+loss: 0.6750, acc: 0.7190
+loss: 0.6672, acc: 0.7236
+> val_acc: 0.8286, val_f1: 0.7364
+>> saved: state_dict/lcf_bert_restaurant_val_acc_0.8286
