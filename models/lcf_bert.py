@@ -61,9 +61,9 @@ class LCF_BERT(nn.Module):
             else:
                 mask_begin = 0
             for i in range(mask_begin):
-                masked_text_raw_indices[text_i][i] = np.zeros((self.opt.bert_dim), dtype=np.float)
+                masked_text_raw_indices[text_i][i] = np.zeros((self.opt.bert_dim), dtype=np.float64)
             for j in range(asp_begin + asp_len + mask_len, self.opt.max_seq_len):
-                masked_text_raw_indices[text_i][j] = np.zeros((self.opt.bert_dim), dtype=np.float)
+                masked_text_raw_indices[text_i][j] = np.zeros((self.opt.bert_dim), dtype=np.float64)
         masked_text_raw_indices = torch.from_numpy(masked_text_raw_indices)
         return masked_text_raw_indices.to(self.opt.device)
 
