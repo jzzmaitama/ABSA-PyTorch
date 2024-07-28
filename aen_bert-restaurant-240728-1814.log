@@ -1,0 +1,141 @@
+> n_trainable_params: 112937661, n_nontrainable_params: 0
+> training arguments:
+>>> model_name: aen_bert
+>>> dataset: restaurant
+>>> optimizer: <class 'transformers.optimization.AdamW'>
+>>> initializer: <function xavier_uniform_ at 0x7fa24adb3040>
+>>> lr: 3e-05
+>>> dropout: 0
+>>> l2reg: 0.01
+>>> num_epoch: 5
+>>> batch_size: 16
+>>> log_step: 10
+>>> embed_dim: 300
+>>> hidden_dim: 300
+>>> bert_dim: 768
+>>> pretrained_bert_name: bert-base-uncased
+>>> max_seq_len: 80
+>>> polarities_dim: 3
+>>> hops: 3
+>>> patience: 5
+>>> device: cpu
+>>> seed: 1234
+>>> valset_ratio: 0
+>>> local_context_focus: cdm
+>>> SRD: 5
+>>> model_class: <class 'models.aen.AEN_BERT'>
+>>> dataset_file: {'train': './datasets/semeval14/Restaurants_Train.xml.seg', 'test': './datasets/semeval14/Restaurants_Test_Gold.xml.seg'}
+>>> inputs_cols: ['text_bert_indices', 'aspect_bert_indices']
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+epoch: 0
+loss: 1.5200, acc: 0.3875
+loss: 1.2655, acc: 0.4656
+loss: 1.1536, acc: 0.5188
+loss: 1.0858, acc: 0.5406
+loss: 1.0239, acc: 0.5637
+loss: 0.9765, acc: 0.5938
+loss: 0.9600, acc: 0.6036
+loss: 0.9323, acc: 0.6172
+loss: 0.9040, acc: 0.6347
+loss: 0.8865, acc: 0.6394
+loss: 0.8622, acc: 0.6506
+loss: 0.8550, acc: 0.6531
+loss: 0.8426, acc: 0.6601
+loss: 0.8294, acc: 0.6643
+loss: 0.8149, acc: 0.6692
+loss: 0.8056, acc: 0.6727
+loss: 0.7961, acc: 0.6779
+loss: 0.7895, acc: 0.6799
+loss: 0.7803, acc: 0.6839
+loss: 0.7704, acc: 0.6866
+loss: 0.7608, acc: 0.6893
+loss: 0.7567, acc: 0.6898
+> val_acc: 0.7902, val_f1: 0.6794
+>> saved: state_dict/aen_bert_restaurant_val_acc_0.7902
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+epoch: 1
+loss: 0.4141, acc: 0.8750
+loss: 0.5443, acc: 0.8125
+loss: 0.5701, acc: 0.7786
+loss: 0.5478, acc: 0.7886
+loss: 0.5449, acc: 0.7884
+loss: 0.5382, acc: 0.7847
+loss: 0.5435, acc: 0.7812
+loss: 0.5419, acc: 0.7812
+loss: 0.5475, acc: 0.7835
+loss: 0.5321, acc: 0.7912
+loss: 0.5300, acc: 0.7933
+loss: 0.5330, acc: 0.7911
+loss: 0.5381, acc: 0.7888
+loss: 0.5394, acc: 0.7850
+loss: 0.5389, acc: 0.7856
+loss: 0.5357, acc: 0.7853
+loss: 0.5326, acc: 0.7858
+loss: 0.5299, acc: 0.7863
+loss: 0.5296, acc: 0.7880
+loss: 0.5301, acc: 0.7877
+loss: 0.5354, acc: 0.7862
+loss: 0.5347, acc: 0.7874
+loss: 0.5316, acc: 0.7868
+> val_acc: 0.8152, val_f1: 0.6991
+>> saved: state_dict/aen_bert_restaurant_val_acc_0.8152
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+epoch: 2
+loss: 0.4255, acc: 0.8594
+loss: 0.3888, acc: 0.8542
+loss: 0.3700, acc: 0.8594
+loss: 0.3920, acc: 0.8438
+loss: 0.3889, acc: 0.8490
+loss: 0.3931, acc: 0.8491
+loss: 0.3890, acc: 0.8502
+loss: 0.3914, acc: 0.8510
+loss: 0.3947, acc: 0.8473
+loss: 0.3967, acc: 0.8444
+loss: 0.3964, acc: 0.8414
+loss: 0.3955, acc: 0.8400
+loss: 0.3941, acc: 0.8398
+loss: 0.4018, acc: 0.8379
+loss: 0.4053, acc: 0.8366
+loss: 0.4037, acc: 0.8366
+loss: 0.4045, acc: 0.8363
+loss: 0.4026, acc: 0.8360
+loss: 0.4022, acc: 0.8368
+loss: 0.4052, acc: 0.8349
+loss: 0.4075, acc: 0.8338
+loss: 0.4087, acc: 0.8349
+> val_acc: 0.8152, val_f1: 0.7062
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+epoch: 3
+loss: 0.4463, acc: 0.8125
+loss: 0.3927, acc: 0.8594
+loss: 0.3952, acc: 0.8409
+loss: 0.3610, acc: 0.8535
+loss: 0.3369, acc: 0.8631
+loss: 0.3274, acc: 0.8654
+loss: 0.3446, acc: 0.8609
+loss: 0.3476, acc: 0.8576
+loss: 0.3487, acc: 0.8552
+loss: 0.3448, acc: 0.8533
+loss: 0.3417, acc: 0.8548
+loss: 0.3469, acc: 0.8538
+loss: 0.3489, acc: 0.8540
+loss: 0.3443, acc: 0.8556
+loss: 0.3432, acc: 0.8565
+loss: 0.3480, acc: 0.8536
+loss: 0.3482, acc: 0.8515
+loss: 0.3483, acc: 0.8517
+loss: 0.3478, acc: 0.8506
+loss: 0.3476, acc: 0.8499
+loss: 0.3503, acc: 0.8512
+loss: 0.3496, acc: 0.8508
+loss: 0.3507, acc: 0.8502
+> val_acc: 0.8098, val_f1: 0.6894
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+epoch: 4
+loss: 0.2783, acc: 0.8542
+loss: 0.2354, acc: 0.8789
+loss: 0.2311, acc: 0.8918
+loss: 0.2546, acc: 0.8750
+loss: 0.2368, acc: 0.8899
+loss: 0.2510, acc: 0.8884
+loss: 0.2584, acc: 0.8816
